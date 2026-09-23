@@ -128,3 +128,16 @@
     @apply font-sans;
     }
 }
+
+@keyframes flight-row-flash {
+  0% {
+    background-color: oklch(0.87 0.08 195 / 18%);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.flight-row-updated {
+  animation: flight-row-flash 1s ease-out;
+}
